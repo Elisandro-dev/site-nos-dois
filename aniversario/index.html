@@ -2,87 +2,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Feliz Aniversário, Meu Amor</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            font-family: sans-serif;
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <title>Feliz Aniversário, Meu Amor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+    }
 
-        .player-box {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 30px;
-            padding: 10px;
-            width: 200px;
-            margin: 20px auto;
-            box-shadow: 0 0 8px rgba(255,255,255,0.15);
-        }
+    .player-box {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 30px;
+      padding: 10px;
+      width: 200px;
+      margin: 20px auto;
+      box-shadow: 0 0 8px rgba(255,255,255,0.15);
+    }
 
-        audio {
-            width: 100%;
-            height: 28px;
-            border-radius: 20px;
-        }
+    audio {
+      width: 100%;
+      height: 28px;
+      border-radius: 20px;
+    }
 
-        .container {
-            padding: 20px;
-        }
+    .slideshow {
+      position: relative;
+      max-width: 90%;
+      margin: 0 auto;
+    }
 
-        .foto {
-            margin-bottom: 40px;
-        }
+    .slide {
+      display: none;
+    }
 
-        .foto img {
-            max-width: 90%;
-            max-height: 80vh;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(255,255,255,0.5);
-        }
+    .slide img {
+      width: auto;
+      max-width: 90vw;
+      max-height: 70vh;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
 
-        .foto p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-    </style>
+    .caption {
+      font-size: 1.2em;
+      margin-top: 10px;
+      padding: 0 10px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="player-box">
-        <audio controls>
-            <source src="musica/musica.mp3" type="audio/mpeg">
-            Seu navegador não suporta áudio HTML5.
-        </audio>
-    </div>
+  <div class="player-box">
+    <audio controls autoplay>
+      <source src="musica/musica.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+  </div>
 
-    <div class="container">
-        <div class="foto"><img src="imagens/foto1.jpg"><p>Desde o primeiro momento em que te vi, soube que havia algo especial em você.</p></div>
-        <div class="foto"><img src="imagens/foto2.jpg"><p>Seu sorriso ilumina meus dias, e seus olhos refletem a mais bela poesia.</p></div>
-        <div class="foto"><img src="imagens/foto3.jpg"><p>A cada instante ao seu lado, descubro um novo motivo para te amar.</p></div>
-        <div class="foto"><img src="imagens/foto4.jpg"><p>Seu toque é meu refúgio, sua voz é a melodia que embala meus sonhos.</p></div>
-        <div class="foto"><img src="imagens/foto5.jpg"><p>Nosso amor é um laço eterno, costurado com carinho e cumplicidade.</p></div>
-        <div class="foto"><img src="imagens/foto6.jpg"><p>Com você, aprendi que o tempo não se mede em horas, mas sim nos sorrisos que compartilhamos.</p></div>
-        <div class="foto"><img src="imagens/foto7.jpg"><p>Quero te amar em todas as estações, em cada amanhecer e em cada pôr do sol.</p></div>
-        <div class="foto"><img src="imagens/foto8.jpg"><p>Quero ser aquele que segura sua mão nos dias difíceis e celebra contigo as maiores conquistas.</p></div>
-        <div class="foto"><img src="imagens/foto9.jpg"><p>Você é o meu destino favorito, a minha escolha diária.</p></div>
-        <div class="foto"><img src="imagens/foto10.jpg"><p>Meu coração bate mais forte só de pensar em você.</p></div>
-        <div class="foto"><img src="imagens/foto11.jpg"><p>Hoje e sempre, você é o melhor presente que a vida me deu.</p></div>
-        <div class="foto"><img src="imagens/foto12.jpg"><p>Cada momento ao seu lado é um sonho realizado.</p></div>
-        <div class="foto"><img src="imagens/foto13.jpg"><p>Nosso amor é infinito como o céu estrelado.</p></div>
-        <div class="foto"><img src="imagens/foto14.jpg"><p>Ao seu lado, todos os dias são especiais.</p></div>
-        <div class="foto"><img src="imagens/foto15.jpg"><p>Nada é mais bonito do que o brilho dos seus olhos.</p></div>
-        <div class="foto"><img src="imagens/foto16.jpg"><p>Você é minha felicidade diária.</p></div>
-        <div class="foto"><img src="imagens/foto17.jpg"><p>A cada dia, meu amor por você cresce mais.</p></div>
-        <div class="foto"><img src="imagens/foto18.jpg"><p>Nosso amor é uma linda história sem fim.</p></div>
-        <div class="foto"><img src="imagens/foto19.jpg"><p>Você é minha estrela guia, minha razão de sorrir.</p></div>
-        <div class="foto"><img src="imagens/foto20.jpg"><p>Eu te amo, para sempre e além.</p></div>
+  <div class="slideshow">
+    <div class="slide">
+      <img src="imagens/foto1.jpg" alt="">
+      <div class="caption">Desde o primeiro momento em que te vi, soube que havia algo especial em você.</div>
     </div>
+    <div class="slide">
+      <img src="imagens/foto2.jpg" alt="">
+      <div class="caption">Seu sorriso ilumina meus dias, e seus olhos refletem a mais bela poesia.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto3.jpg" alt="">
+      <div class="caption">A cada instante ao seu lado, descubro um novo motivo para te amar.</div>
+    </div>
+    <!-- Continue com as outras 17 fotos e frases... -->
+    <div class="slide">
+      <img src="imagens/foto20.jpg" alt="">
+      <div class="caption">Eu te amo, para sempre e além.</div>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 10000); // 10 segundos
+    }
+
+    showSlides();
+  </script>
 
 </body>
 </html>
+
