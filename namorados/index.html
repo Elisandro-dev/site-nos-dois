@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Feliz Dia dos Namorados 💘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="audio">
+        <source src="musica/musica.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+    </audio>
+    <button id="botao-musica" onclick="tocarMusica()">Tocar música do amor 💖</button>
+
+    <div class="container">
+        <div class="foto">
+            <img src="imagens/foto1.jpg" alt="Foto 1">
+            <p>Te amar não é sobre prometer o mundo. É só estar aqui, inteiro, pra você.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto2.jpg" alt="Foto 2">
+            <p>Entre mil coisas que eu poderia ser, escolho ser teu abrigo.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto3.jpg" alt="Foto 3">
+            <p>Tem dias que eu só queria caber no teu colo e esquecer do resto.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto4.jpg" alt="Foto 4">
+            <p>Você não faz barulho... mas muda tudo quando chega.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto5.jpg" alt="Foto 5">
+            <p>Te ouvir me faz bem. Te ver rindo muda meu dia. Te ter é o que me faz ficar.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto6.jpg" alt="Foto 6">
+            <p>Nem todo dia é leve, mas com você nenhum é em vão.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto7.jpg" alt="Foto 7">
+            <p>Te amo no que é bonito... mas também nas bagunças que só a gente entende.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto8.jpg" alt="Foto 8">
+            <p>O jeito que você me olha é o que me segura quando o mundo gira demais.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto9.jpg" alt="Foto 9">
+            <p>Se for pra repetir alguma coisa na vida, que seja nós dois.</p>
+        </div>
+        <div class="foto">
+            <img src="imagens/foto10.jpg" alt="Foto 10">
+            <p>Eu sei que sou chato… mas não existe nada que eu não faria por você. Eu te amo muito, ontem menos que hoje e hoje muito menos que amanhã.</p>
+        </div>
+    </div>
+
+    <script>
+        function tocarMusica() {
+            const audio = document.getElementById("audio");
+            audio.play();
+            document.getElementById("botao-musica").style.display = "none";
+        }
+    </script>
+</body>
+</html>

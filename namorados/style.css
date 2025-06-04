@@ -1,0 +1,40 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.foto {
+    margin-bottom: 40px;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#botao-musica {
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
