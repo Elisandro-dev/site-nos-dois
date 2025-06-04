@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,21 +6,52 @@
     <title>Feliz Dia dos Namorados 💘</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .player-box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            margin: 30px auto;
+            box-shadow: 0 0 15px rgba(255,255,255,0.2);
+            text-align: center;
+        }
+
+        #playPause {
+            background: none;
+            border: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-    <audio id="audio">
-        <source src="musica/musica.mp3" type="audio/mpeg">
-        Seu navegador não suporta áudio HTML5.
-    </audio>
-    <button id="botao-musica" onclick="tocarMusica()">Tocar música do amor 💖</button>
 
+    <!-- Música com botão play/pause em caixa arredondada -->
+    <div class="player-box">
+        <button id="playPause">▶️</button>
+        <audio id="audio" controls>
+            <source src="musica/musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio HTML5.
+        </audio>
+    </div>
+
+    <!-- Galeria de fotos com frases -->
     <div class="container">
         <div class="foto">
-            <img src="imagens/foto1.jpg" alt="Foto 1">
+            <img src="imagens/foto2.jpg" alt="Foto 2">
             <p>Te amar não é sobre prometer o mundo. É só estar aqui, inteiro, pra você.</p>
         </div>
         <div class="foto">
-            <img src="imagens/foto2.jpg" alt="Foto 2">
+            <img src="imagens/foto1.jpg" alt="Foto 1"> 
             <p>Entre mil coisas que eu poderia ser, escolho ser teu abrigo.</p>
         </div>
         <div class="foto">
@@ -57,11 +89,23 @@
     </div>
 
     <script>
-        function tocarMusica() {
-            const audio = document.getElementById("audio");
-            audio.play();
-            document.getElementById("botao-musica").style.display = "none";
-        }
+        const audio = document.getElementById("audio");
+        const btn = document.getElementById("playPause");
+
+        btn.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                btn.innerText = "⏸️";
+            } else {
+                audio.pause();
+                btn.innerText = "▶️";
+            }
+        });
+
+        audio.addEventListener("ended", () => {
+            btn.innerText = "▶️";
+        });
     </script>
+
 </body>
 </html>
