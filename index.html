@@ -17,24 +17,19 @@
       font-family: sans-serif;
       color: white;
       text-align: center;
-      padding-top: 30px;
+      padding-top: 40px;
       text-shadow: 1px 1px 6px black;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 30px;
-      padding: 0 20px;
     }
     .botoes {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
-      padding: 0 20px;
+      gap: 15px;
+      margin-bottom: 30px;
     }
     .botao {
-      padding: 20px 40px;
-      font-size: 1.2em;
+      padding: 10px 20px;
+      font-size: 1em;
       background: rgba(255, 20, 147, 0.7);
       border: none;
       color: white;
@@ -46,15 +41,53 @@
     .botao:hover {
       background: rgba(255, 20, 147, 0.9);
     }
+
+    #botao-musica {
+      background: transparent;
+      border: none;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    #botao-musica:hover {
+      color: #ff69b4;
+    }
   </style>
 </head>
 <body>
-  <h1>Escolha uma Página 💞</h1>
+
+  <!-- Botão de música -->
+  <audio id="audio">
+    <source src="musica/musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+  <button id="botao-musica" onclick="tocarMusica()">▶️</button>
+
+  <!-- Botões para os sites -->
   <div class="botoes">
-    <a href="aniversario/index.html" class="botao">🎂 Feliz Aniversário</a>
-    <a href="namorados/index.html" class="botao">💘 Dia dos Namorados</a>
+    <a href="aniversario/index.html" class="botao">🎂 Aniversário</a>
+    <a href="namorados/index.html" class="botao">💘 Namorados</a>
   </div>
+
+  <script>
+    const audio = document.getElementById("audio");
+    const botaoMusica = document.getElementById("botao-musica");
+    let tocando = false;
+
+    function tocarMusica() {
+      if (!tocando) {
+        audio.play();
+        botaoMusica.innerText = "⏸️";
+        tocando = true;
+      } else {
+        audio.pause();
+        botaoMusica.innerText = "▶️";
+        tocando = false;
+      }
+    }
+  </script>
 </body>
 </html>
 
-   
