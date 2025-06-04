@@ -6,31 +6,42 @@
   <title>Nosso Amor 💖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       padding: 0;
       background: url('imagem1 (2).JPG') no-repeat center center fixed;
       background-size: cover;
-      text-align: center;
       font-family: sans-serif;
       color: white;
-      padding-top: 100px;
+      text-align: center;
+      padding-top: 30px;
       text-shadow: 1px 1px 6px black;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      padding: 0 20px;
+    }
+    .botoes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 20px;
     }
     .botao {
-      margin: 20px;
       padding: 20px 40px;
-      font-size: 20px;
-      background: rgba(255, 20, 147, 0.6);
+      font-size: 1.2em;
+      background: rgba(255, 20, 147, 0.7);
       border: none;
       color: white;
       border-radius: 10px;
       cursor: pointer;
       text-decoration: none;
+      transition: background 0.3s;
     }
     .botao:hover {
       background: rgba(255, 20, 147, 0.9);
@@ -39,8 +50,11 @@
 </head>
 <body>
   <h1>Escolha uma Página 💞</h1>
-  <a href="aniversario/index.html" class="botao">🎂 Feliz Aniversário</a>
-  <a href="namorados/index.html" class="botao">💘 Dia dos Namorados</a>
+  <div class="botoes">
+    <a href="aniversario/index.html" class="botao">🎂 Feliz Aniversário</a>
+    <a href="namorados/index.html" class="botao">💘 Dia dos Namorados</a>
+  </div>
 </body>
 </html>
 
+   
