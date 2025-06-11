@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feliz Dia dos Namorados 💘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style-namorados.css" />
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="musica/namorados.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="imagens/foto1.jpg" alt="Foto 1">
+      <div class="caption">Te amar não é sobre prometer o mundo. É só estar aqui, inteiro, pra você.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto2.jpg" alt="Foto 2">
+      <div class="caption">Entre mil coisas que eu poderia ser, escolho ser teu abrigo.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto3.jpg" alt="Foto 3">
+      <div class="caption">Tem dias que eu só queria caber no teu colo e esquecer do resto.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto4.jpg" alt="Foto 4">
+      <div class="caption">Você não faz barulho... mas muda tudo quando chega.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto5.jpg" alt="Foto 5">
+      <div class="caption">Te ouvir me faz bem. Te ver rindo muda meu dia. Te ter é o que me faz ficar.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto6.jpg" alt="Foto 6">
+      <div class="caption">Nem todo dia é leve, mas com você nenhum é em vão.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto7.jpg" alt="Foto 7">
+      <div class="caption">Te amo no que é bonito... mas também nas bagunças que só a gente entende.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto8.jpg" alt="Foto 8">
+      <div class="caption">O jeito que você me olha é o que me segura quando o mundo gira demais.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto9.jpg" alt="Foto 9">
+      <div class="caption">Se for pra repetir alguma coisa na vida, que seja nós dois.</div>
+    </div>
+    <div class="slide">
+      <img src="imagens/foto10.jpg" alt="Foto 10">
+      <div class="caption">Eu sei que sou chato… mas não existe nada que eu não faria por você. Eu te amo muito, ontem menos que hoje e hoje muito menos que amanhã.</div>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+      slides.forEach(slide => slide.style.display = "none");
+      slideIndex++;
+      if (slideIndex > slides.length) slideIndex = 1;
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 10000); // 10 segundos
+    }
+
+    showSlides();
+  </script>
+</body>
+</html>
