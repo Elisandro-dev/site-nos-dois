@@ -30,7 +30,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
   transition: transform 0.5s ease;
 }
@@ -40,7 +40,7 @@ body {
   bottom: 30px;
   width: 100%;
   text-align: center;
-  font-size: 1.8em; /* ← aumenta a fonte */
+  font-size: 1.4em; /* ← aumenta a fonte */
   padding: 0 20px;
   animation: fadeIn 2s ease-in forwards;
   opacity: 0;
