@@ -14,8 +14,10 @@ body {
   position: relative;
   max-width: 90vw;
   max-height: 90vh;
+  width: 100%;
+  height: 100vh; /* ← isso aqui garante que o container ocupe a tela inteira */
+  overflow: hidden;
 }
-
 .slide {
   display: none;
   position: absolute;
